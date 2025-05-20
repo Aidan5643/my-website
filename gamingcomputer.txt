@@ -1,0 +1,695 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Gaming | Premium Gaming PCs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        accent: '#F59E0B',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(31,41,55,0.95) 0%, rgba(59,130,246,0.8) 100%);
+        }
+        .pc-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .spec-icon {
+            color: #3B82F6;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-gamepad text-accent text-2xl"></i>
+                <span class="font-bold text-xl">Nexus Gaming</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="hover:text-accent transition">Home</a>
+                <a href="#systems" class="hover:text-accent transition">Systems</a>
+                <a href="#customize" class="hover:text-accent transition">Customize</a>
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-accent transition"><i class="fas fa-shopping-cart"></i></a>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Dominate The Game</h1>
+                <p class="text-xl mb-8">Premium gaming PCs built for performance, designed for victory. Experience next-level gaming with our handcrafted systems.</p>
+                <div class="flex space-x-4">
+                    <a href="#systems" class="bg-accent hover:bg-yellow-600 text-dark font-bold py-3 px-6 rounded-lg transition">Shop Now</a>
+                    <a href="#customize" class="border-2 border-white hover:bg-white hover:text-dark font-bold py-3 px-6 rounded-lg transition">Custom Build</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80" alt="Gaming PC" class="rounded-lg shadow-2xl max-w-md w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Systems -->
+    <section id="systems" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Our Premium Systems</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Choose from our expertly curated selection of high-performance gaming PCs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- PC Card 1 -->
+                <div class="pc-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1552831388-6a8b7cb9ed35?ixlib=rb-4.0.3&ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nexus Pro" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-accent text-dark px-3 py-1 rounded-full text-sm font-bold">BEST SELLER</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Nexus Pro</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">(48 reviews)</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-microchip"></i></div>
+                                <p class="text-gray-600">Ryzen 9 5900X</p>
+                            </div>
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-memory"></i></div>
+                                <p class="text-gray-600">32GB DDR4</p>
+                            </div>
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-hdd"></i></div>
+                                <p class="text-gray-600">1TB NVMe SSD</p>
+                            </div>
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <p class="text-gray-600">RTX 3080</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-dark">$2,299</span>
+                            <button class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PC Card 2 -->
+                <div class="pc-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nexus Elite" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-bold">NEW</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Nexus Elite</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">(32 reviews)</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-microchip"></i></div>
+                                <p class="text-gray-600">i9-13900K</p>
+                            </div>
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-memory"></i></div>
+                                <p class="text-gray-600">64GB DDR5</p>
+                            </div>
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-hdd"></i></div>
+                                <p class="text-gray-600">2TB NVMe SSD</p>
+                            </div>
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <p class="text-gray-600">RTX 4090</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-dark">$3,999</span>
+                            <button class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PC Card 3 -->
+                <div class="pc-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1592899677977-9c10df588f62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nexus Core" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Nexus Core</h3>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">(64 reviews)</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-microchip"></i></div>
+                                <p class="text-gray-600">Ryzen 7 5800X</p>
+                            </div>
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-memory"></i></div>
+                                <p class="text-gray-600">16GB DDR4</p>
+                            </div>
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-hdd"></i></div>
+                                <p class="text-gray-600">512GB NVMe SSD</p>
+                            </div>
+                            <div>
+                                <div class="spec-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                <p class="text-gray-600">RTX 3070</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-dark">$1,599</span>
+                            <button class="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded-lg transition">View All Systems</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Build Section -->
+    <section id="customize" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Build Your Dream PC</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Customize every component to create the perfect gaming rig for your needs</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-dark mb-6">Select Components</h3>
+                        
+                        <div class="space-y-6">
+                            <!-- Processor -->
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Processor (CPU)</label>
+                                <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                    <option>AMD Ryzen 9 7950X3D</option>
+                                    <option>Intel Core i9-13900K</option>
+                                    <option>AMD Ryzen 7 7800X3D</option>
+                                    <option>Intel Core i7-13700K</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Graphics Card -->
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Graphics Card (GPU)</label>
+                                <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                    <option>NVIDIA RTX 4090</option>
+                                    <option>NVIDIA RTX 4080</option>
+                                    <option>AMD Radeon RX 7900 XTX</option>
+                                    <option>NVIDIA RTX 4070 Ti</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Memory -->
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Memory (RAM)</label>
+                                <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                    <option>32GB DDR5 6000MHz</option>
+                                    <option>64GB DDR5 6000MHz</option>
+                                    <option>16GB DDR5 6000MHz</option>
+                                    <option>128GB DDR5 6000MHz</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Storage -->
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Storage</label>
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <input type="checkbox" id="ssd1" class="mr-2">
+                                        <label for="ssd1">1TB NVMe SSD (+$150)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="checkbox" id="ssd2" class="mr-2">
+                                        <label for="ssd2">2TB NVMe SSD (+$300)</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="checkbox" id="hdd" class="mr-2">
+                                        <label for="hdd">4TB HDD (+$100)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Cooling -->
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Cooling System</label>
+                                <div class="flex space-x-4">
+                                    <div class="flex items-center">
+                                        <input type="radio" id="air" name="cooling" class="mr-2" checked>
+                                        <label for="air">Air Cooling</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="liquid" name="cooling" class="mr-2">
+                                        <label for="liquid">Liquid Cooling (+$120)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-dark text-white p-8">
+                        <h3 class="text-xl font-bold mb-6">Your Custom Build</h3>
+                        
+                        <div class="mb-8">
+                            <div class="flex justify-between py-2 border-b border-gray-700">
+                                <span>Base System</span>
+                                <span>$1,499</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-700">
+                                <span>AMD Ryzen 9 7950X3D</span>
+                                <span>+$599</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-700">
+                                <span>NVIDIA RTX 4090</span>
+                                <span>+$1,599</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-700">
+                                <span>32GB DDR5 6000MHz</span>
+                                <span>+$199</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-700">
+                                <span>1TB NVMe SSD</span>
+                                <span>+$150</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-gray-700">
+                                <span>Liquid Cooling</span>
+                                <span>+$120</span>
+                            </div>
+                            
+                            <div class="flex justify-between py-4 font-bold text-lg">
+                                <span>Total</span>
+                                <span>$4,186</span>
+                            </div>
+                        </div>
+                        
+                        <button class="w-full bg-accent hover:bg-yellow-600 text-dark font-bold py-3 px-4 rounded-lg transition mb-4">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="w-full border-2 border-accent text-accent hover:bg-accent hover:text-dark font-bold py-3 px-4 rounded-lg transition">
+                            Save Configuration
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Why Choose Nexus Gaming</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We're committed to delivering the ultimate gaming experience</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-primary bg-opacity-10 text-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-certificate text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Premium Components</h3>
+                    <p class="text-gray-600">We use only the highest quality components from trusted manufacturers to ensure reliability and performance.</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-primary bg-opacity-10 text-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Expert Assembly</h3>
+                    <p class="text-gray-600">Each system is hand-built by our experienced technicians with meticulous attention to detail.</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
+                    <div class="bg-primary bg-opacity-10 text-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Comprehensive Warranty</h3>
+                    <p class="text-gray-600">All our systems come with a 3-year warranty and lifetime technical support for peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from gamers like you</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"My Nexus Pro handles everything I throw at it with ease. The build quality is exceptional and it looks amazing on my desk!"</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex T." class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-bold text-dark">Alex T.</h4>
+                            <p class="text-gray-600 text-sm">Professional Streamer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The customization options were perfect. I got exactly what I wanted at a better price than building it myself."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah K." class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-bold text-dark">Sarah K.</h4>
+                            <p class="text-gray-600 text-sm">Competitive Gamer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Customer service was amazing when I had questions about upgrading. My system runs all the latest games at max settings."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="James L." class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <h4 class="font-bold text-dark">James L.</h4>
+                            <p class="text-gray-600 text-sm">Game Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Have Questions?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our team is ready to help you find or build your perfect gaming PC</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-dark mb-6">Contact Us</h3>
+                        
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="name">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="subject">Subject</label>
+                                <select id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                    <option>General Inquiry</option>
+                                    <option>Pre-Sales Questions</option>
+                                    <option>Technical Support</option>
+                                    <option>Warranty Service</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="bg-dark text-white p-8">
+                        <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="text-primary mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Address</h4>
+                                    <p>123 Gaming Street, Tech City, TC 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-primary mr-4 mt-1">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                    <p class="text-sm text-gray-400">Mon-Fri: 9AM-6PM EST</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-primary mr-4 mt-1">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <p>support@nexusgaming.com</p>
+                                    <p class="text-sm text-gray-400">Response within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-primary mr-4 mt-1">
+                                    <i class="fas fa-comment-dots"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Live Chat</h4>
+                                    <p>Available on our website</p>
+                                    <p class="text-sm text-gray-400">Mon-Fri: 9AM-9PM EST</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-white hover:text-primary transition"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="text-white hover:text-primary transition"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-white hover:text-primary transition"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-white hover:text-primary transition"><i class="fab fa-discord"></i></a>
+                                <a href="#" class="text-white hover:text-primary transition"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Stay Updated</h2>
+            <p class="max-w-2xl mx-auto mb-6">Subscribe to our newsletter for the latest products, deals, and gaming news</p>
+            
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-dark">
+                <button class="bg-accent hover:bg-yellow-600 text-dark font-bold px-6 py-3 rounded-r-lg transition">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-gamepad text-accent text-2xl"></i>
+                        <span class="font-bold text-xl">Nexus Gaming</span>
+                    </div>
+                    <p class="text-gray-400">Premium gaming PCs built for performance, designed for victory.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">All Systems</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Custom Builds</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Gaming Peripherals</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Returns & Warranty</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Nexus Gaming. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-cc-visa"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-cc-mastercard"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-cc-amex"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-cc-paypal"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple cart counter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('button:contains("Add to Cart")');
+            const cartIcon = document.querySelector('.fa-shopping-cart');
+            let cartCount = 0;
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartCount++;
+                    if (cartCount > 0) {
+                        const counter = document.createElement('span');
+                        counter.className = 'absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center';
+                        counter.textContent = cartCount;
+                        
+                        const cartContainer = cartIcon.parentElement;
+                        cartContainer.classList.add('relative');
+                        
+                        // Remove existing counter if it exists
+                        const existingCounter = cartContainer.querySelector('.absolute');
+                        if (existingCounter) {
+                            existingCounter.remove();
+                        }
+                        
+                        cartContainer.appendChild(counter);
+                    }
+                    
+                    // Show a simple alert for demo purposes
+                    alert('Item added to cart!');
+                });
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
